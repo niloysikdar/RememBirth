@@ -1,13 +1,7 @@
-import { data } from "./data";
+import { Home } from "./pages/Home";
 
 const App = () => {
-  return (
-    <div>
-      {data.map((item) => (
-        <h2>{item.name}</h2>
-      ))}
-    </div>
-  );
+  return <Home />;
 };
 
 export { App };

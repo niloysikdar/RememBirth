@@ -5,6 +5,6 @@ export const Niloy: itemType = {
   birthDate: "30/07",
   imageURL: "https://i.imgur.com/LQF21TP.png",
   gitHubURL: "https://github.com/niloysikdar",
-  linkedInURL: "",
-  twitterURL: "",
+  linkedInURL: "https://www.linkedin.com/in/niloysikdar/",
+  twitterURL: "https://twitter.com/niloysikdar_",
 };

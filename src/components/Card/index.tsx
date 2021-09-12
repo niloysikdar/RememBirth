@@ -1,10 +1,24 @@
 import { FC } from "react";
 import { itemType } from "../../data/type/itemType";
+import { Links } from "./Links";
 
-const Card: FC<itemType> = (props) => {
+import styles from "./card.module.scss";
+
+interface cardProps {
+  data: itemType;
+}
+
+const Card: FC<cardProps> = (props) => {
   return (
-    <div>
-      <h2>{props.name}</h2>
+    <div className={styles.card}>
+      <img src={props.data.imageURL} alt={props.data.name} />
+      <h2>{props.data.name}</h2>
+      <h3>BirthDate: {props.data.birthDate}</h3>
+      <Links
+        github={props.data.gitHubURL}
+        linkedIn={props.data.linkedInURL}
+        twitter={props.data.twitterURL}
+      />
     </div>
   );
 };
