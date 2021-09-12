@@ -6,5 +6,6 @@ import {Medha} from "./details/Medha";
 import {RiyaBisht} from "./details/RiyaBisht";
 import { Hannan } from "./details/Hannan";
 import { harshita } from "./details/harshita";
+import{ Tanushree } from "./details/Tanushree";
 
-export const data: itemType[] = [Niloy , sakshigupta, Medha, RiyaBisht, Hannan, harshita];
+export const data: itemType[] = [Niloy , sakshigupta, Medha, RiyaBisht, Hannan, harshita, Tanushree];
