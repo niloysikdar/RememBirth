@@ -1,16 +1,11 @@
 import { Card } from "../../components/Card";
 import { data } from "../../data";
 
+import styles from "./style.module.scss";
+
 const Home = () => {
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className={styles.home}>
       {data.map((item) => (
         <Card data={item} />
       ))}
