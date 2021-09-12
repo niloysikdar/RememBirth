@@ -1,10 +1,16 @@
+import { FC } from "react";
 import styles from "./style.module.scss";
 
-const Header = () => {
+interface headerProps {
+  setAll: any;
+  setToday: any;
+}
+
+const Header: FC<headerProps> = (props) => {
   return (
     <div className={styles.header}>
-      <button>All</button>
-      <button>Today</button>
+      <button onClick={props.setAll}>All</button>
+      <button onClick={props.setToday}>Today</button>
     </div>
   );
 };
