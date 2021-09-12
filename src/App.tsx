@@ -1,7 +1,11 @@
+import { data } from "./data";
+
 const App = () => {
   return (
     <div>
-      <h2>Hello World</h2>
+      {data.map((item) => (
+        <h2>{item.name}</h2>
+      ))}
     </div>
   );
 };
