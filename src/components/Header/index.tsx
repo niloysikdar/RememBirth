@@ -1,4 +1,6 @@
 import { FC } from "react";
+import { FaInfo } from "react-icons/fa";
+
 import styles from "./style.module.scss";
 
 interface headerProps {
@@ -9,8 +11,18 @@ interface headerProps {
 const Header: FC<headerProps> = (props) => {
   return (
     <div className={styles.header}>
-      <button onClick={props.setAll}>All</button>
-      <button onClick={props.setToday}>Today</button>
+      <h3>RememBirth</h3>
+      <div className={styles.buttons}>
+        <button className={styles.toggleButton} onClick={props.setAll}>
+          All
+        </button>
+        <button className={styles.toggleButton} onClick={props.setToday}>
+          Today
+        </button>
+      </div>
+      <button className={styles.info}>
+        <FaInfo size={25} />
+      </button>
     </div>
   );
 };

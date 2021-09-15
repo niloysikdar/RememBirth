@@ -1,19 +1,48 @@
 .header {
+  position: fixed;
+  top: 0;
   width: 100%;
+  padding: 0 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-  button {
-    margin: 2rem;
-    padding: 8px 22px;
-    font-size: 1.3rem;
-    font-weight: 600;
+  h3 {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+  }
+
+  .buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .toggleButton {
+      margin: 1rem 1.5rem;
+      padding: 8px 22px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+
+  .info {
+    margin: 1rem 0;
+    padding: 0.7rem;
+    border-radius: 50%;
     cursor: pointer;
     outline: none;
     border: none;
     background-color: #fff;
-    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 }
