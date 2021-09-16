@@ -1,9 +1,11 @@
 .home {
-  min-height: calc(100vh - 120px);
+  margin-top: 80px;
+  height: calc(100vh - 90px);
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 3rem;
   padding: 2.5rem;
+  overflow-y: scroll;
 }

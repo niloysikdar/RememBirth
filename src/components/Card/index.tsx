@@ -1,8 +1,8 @@
-import { FC } from "react";
-import { itemType } from "../../data/type/itemType";
-import { Links } from "./Links";
+import { FC } from 'react';
+import { itemType } from '../../data/type/itemType';
+import { Links } from './Links';
 
-import styles from "./card.module.scss";
+import styles from './card.module.scss';
 
 interface cardProps {
   data: itemType;
