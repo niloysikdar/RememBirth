@@ -1,11 +1,14 @@
 import { FC } from "react";
 import { FaInfo } from "react-icons/fa";
 
+import { motion } from "framer-motion";
+
 import styles from "./style.module.scss";
 
 interface headerProps {
   setAll: any;
   setToday: any;
+  aboutOpen: any;
 }
 
 const Header: FC<headerProps> = (props) => {
@@ -20,9 +23,14 @@ const Header: FC<headerProps> = (props) => {
           Today
         </button>
       </div>
-      <button className={styles.info}>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className={styles.info}
+        onClick={props.aboutOpen}
+      >
         <FaInfo size={25} />
-      </button>
+      </motion.button>
     </div>
   );
 };
