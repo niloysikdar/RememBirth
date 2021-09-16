@@ -5,6 +5,7 @@ import { Header } from "../../components/Header";
 import { Card } from "../../components/Card";
 import { data } from "../../data";
 import { About } from "../../components/About";
+import { useModal } from "../../hooks/useModal";
 
 import { getDate } from "../../utils/getDateAndMonth";
 import styles from "./style.module.scss";
@@ -14,9 +15,7 @@ const Home = () => {
   const setAll = () => setIsAll(true);
   const setToday = () => setIsAll(false);
 
-  const [isAboutOpen, setAboutOpen] = useState(false);
-  const open = () => setAboutOpen(true);
-  const close = () => setAboutOpen(false);
+  const { isModalOpen, open, close } = useModal();
 
   return (
     <>
@@ -33,7 +32,7 @@ const Home = () => {
         exitBeforeEnter={true}
         onExitComplete={() => null}
       >
-        {isAboutOpen && <About handleClose={close} />}
+        {isModalOpen && <About handleClose={close} />}
       </AnimatePresence>
     </>
   );
