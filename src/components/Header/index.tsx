@@ -1,9 +1,9 @@
-import { FC } from "react";
-import { FaInfo } from "react-icons/fa";
+import { FC } from 'react';
+import { FaInfo } from 'react-icons/fa';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import styles from "./style.module.scss";
+import styles from './style.module.scss';
 
 interface headerProps {
   setAll: any;
