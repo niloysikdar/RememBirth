@@ -8,6 +8,7 @@ import { Hannan } from './details/Hannan';
 import { harshita } from './details/harshita';
 import { Tanushree } from './details/Tanushree';
 import { Shreya } from './details/Shreya';
+import{ sarika } from "./details/sarika";
 
 export const data: itemType[] = [
   Niloy,
@@ -18,4 +19,5 @@ export const data: itemType[] = [
   harshita,
   Tanushree,
   Shreya,
+  sarika,
 ];
