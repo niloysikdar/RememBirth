@@ -1,7 +1,7 @@
-import { FC } from "react";
-import { motion } from "framer-motion";
+import { FC } from 'react';
+import { motion } from 'framer-motion';
 
-import styles from "./style.module.scss";
+import styles from './style.module.scss';
 
 interface backdropPropstype {
   children: any;
