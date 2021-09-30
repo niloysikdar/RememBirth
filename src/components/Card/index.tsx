@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { itemType } from '../../data/type/itemType';
+import { itemType } from '../../types/UserDataType';
 import { Links } from './Links';
 
 import styles from './card.module.scss';
