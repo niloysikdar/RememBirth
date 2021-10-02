@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="https://socialify.git.ci/niloysikdar/RememBirth/image?description=1&font=Raleway&forks=1&issues=1&language=1&owner=1&pattern=Charlie%20Brown&pulls=1&stargazers=1&theme=Dark" alt="Logo" width="60%">
+    <img src="https://socialify.git.ci/niloysikdar/RememBirth/image?description=1&font=Raleway&forks=1&issues=1&language=1&owner=1&pattern=Charlie%20Brown&pulls=1&stargazers=1&theme=Dark" alt="Logo" width="75%">
 
   <h1 align="center">RememBirth</h1>
 
