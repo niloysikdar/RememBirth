@@ -35,11 +35,7 @@ const Home = () => {
               .filter((item) => item.birthDate === getDate())
               .map((cardData) => <Card key={cardData.name} data={cardData} />)}
       </div>
-      <AnimatePresence
-        initial={false}
-        exitBeforeEnter={true}
-        onExitComplete={() => null}
-      >
+      <AnimatePresence initial={false} exitBeforeEnter={true} onExitComplete={() => null}>
         {isModalOpen && <About handleClose={close} />}
       </AnimatePresence>
     </>

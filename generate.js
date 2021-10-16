@@ -5,12 +5,7 @@ const fs = require('fs');
 const readDirectoryPath = path.join(__dirname, 'public', 'data', 'json');
 const files = fs.readdirSync(readDirectoryPath);
 const profiles = files.map((file) => {
-  const data = JSON.parse(
-    fs.readFileSync(
-      `${path.join(__dirname, 'public', 'data', 'json', file)}`,
-      'utf8'
-    )
-  );
+  const data = JSON.parse(fs.readFileSync(`${path.join(__dirname, 'public', 'data', 'json', file)}`, 'utf8'));
   return {
     username: file.split('.')[0],
     ...data,

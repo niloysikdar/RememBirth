@@ -14,11 +14,7 @@ const Card: FC<cardProps> = (props) => {
       <img src={props.data.imageURL} alt={props.data.name} />
       <h2>{props.data.name}</h2>
       <h3>BirthDate: {props.data.birthDate}</h3>
-      <Links
-        github={props.data.gitHubURL}
-        linkedIn={props.data.linkedInURL}
-        twitter={props.data.twitterURL}
-      />
+      <Links github={props.data.gitHubURL} linkedIn={props.data.linkedInURL} twitter={props.data.twitterURL} />
     </div>
   );
 };
