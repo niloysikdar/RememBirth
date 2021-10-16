@@ -23,3 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 public/data/data.json
+
+# lockfiles
+package-lock.json
+yarn.lock
