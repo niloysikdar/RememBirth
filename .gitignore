@@ -26,4 +26,4 @@ public/data/data.json
 
 # lockfiles
 package-lock.json
-# yarn.lock
+yarn.lock
