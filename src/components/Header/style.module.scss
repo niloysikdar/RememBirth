@@ -13,7 +13,7 @@
     display: flex;
 
     .toggleButton {
-      margin: .6rem;
+      margin: 0.6rem;
       padding: 8px 16px;
       font-weight: 600;
       cursor: pointer;
@@ -26,8 +26,8 @@
   }
 
   .info {
-    margin: .6rem;
-    padding: 0.2rem;
+    margin: 0.6rem;
+    padding: 8px;
     border-radius: 50%;
     cursor: pointer;
     outline: none;
@@ -36,8 +36,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
-  @media (min-width:40rem) {
-
+  @media (min-width: 40rem) {
     /**
 		* Note - Media query for screen size >= 640
 		* (In short media query is used to shape tablets,laptops & PC's)
