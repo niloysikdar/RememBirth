@@ -1,13 +1,13 @@
 .about {
   display: flex;
   flex-direction: column;
-  width: 30rem;
-  height: 18rem;
+  width: clamp(50%, 700px, 90%);
   margin: 0, auto;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   border-radius: 12px;
   align-items: center;
   background: #fff;
+  text-align: center;
 
   h2 {
     background-color: transparent;
@@ -15,15 +15,14 @@
     border-top-left-radius: 12px;
     border-bottom: 1px solid #000;
     text-align: center;
-    width: 30rem;
     padding: 0.1rem;
   }
   p {
-    padding: 2rem;
+    padding: 2rem 0;
   }
   button {
     margin: 1rem 1.5rem;
-    padding: 0 1rem;
+    padding: 7px 20px;
     font-size: 1.3rem;
     font-weight: 600;
     cursor: pointer;
@@ -31,7 +30,6 @@
     border: none;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
   }
 }
