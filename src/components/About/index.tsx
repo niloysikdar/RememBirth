@@ -20,11 +20,16 @@ const About: FC<propType> = ({ handleClose }) => {
         animate='visible'
         exit='exit'
       >
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vitae odit beatae provident autem, repellendus
-          libero eum ducimus impedit quia ut temporibus sunt ex incidunt vero voluptas porro blanditiis saepe!
-        </p>
-        <button onClick={handleClose}>Close</button>
+        <h2>RememBirth</h2>
+        <section>
+          <p>
+            Never forget important birthdays anymore.
+            <br /><br />
+            Keep track of birthday's for family, friends and 
+            colleagues with our easy to use application.
+          </p>        
+        </section>
+        <button onClick={handleClose}>Close</button>        
       </motion.div>
     </Backdrop>
   );
