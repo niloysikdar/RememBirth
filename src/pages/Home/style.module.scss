@@ -9,3 +9,9 @@
   padding: 2.5rem;
   overflow-y: scroll;
 }
+
+@media only screen and (max-width: 439px) {
+  .home {
+    margin-top: 111px;
+  }
+}
