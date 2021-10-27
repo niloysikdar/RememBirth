@@ -4,6 +4,7 @@
   width: 100%;
   padding: 0 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
@@ -25,6 +26,13 @@
     }
   }
 
+  .title {
+    padding-right: 20px;
+    min-width: fit-content;
+    display: inline-block;
+    margin: 0px 0.6rem;
+  }
+
   .info {
     margin: 0.6rem;
     padding: 8px;
@@ -34,6 +42,20 @@
     border: none;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+
+  @media only screen and (max-width: 439px) {
+    .title {
+      padding-top:19px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .buttons {
+      width: 100%;
+      justify-content: center;
+    }
   }
 
   @media (min-width: 40rem) {
